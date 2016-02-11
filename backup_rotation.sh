@@ -369,7 +369,7 @@ cd $CURRENT_DIR
 
 # + This doesn't seem to work right. Maybe it's in the wrong place or looking for the wrong thing.
 # Even if backup works properly, this still generates an email saying that it failed.
-#
+# Yes, files backup does not work unless RUN_NOW is set to 1
 # Optional check if source files exist. Email if failed.
 #if [ ! -f $TMP_DIR/backup.incoming/$backup_filename ]; then
 #  echo "Daily backup failed! Please check for missing files." | mail -s "$EMAIL_SUBJECT_TAG Backup Failed" $MAIL
